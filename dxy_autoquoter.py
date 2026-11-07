@@ -38,7 +38,7 @@ DAILY_SETTLEMENT_ET = "13:59:00"
 
 PYTH_SYMBOL = "FX.USDXY"
 PYTH_ASSET_TYPE = "fx"
-HISTORY_DAYS = 30
+HISTORY_DAYS = 30  # 個人智慧財產,參數不提供 (placeholder)
 BAR_RESOLUTION_MIN = 1
 GARCH_SCALE = 10000.0
 ASSUME_ZERO_DRIFT = True
@@ -51,21 +51,21 @@ DISABLE_PERIODIC_REFIT = True   # if True, GARCH is fit ONCE at startup (protect
                                   # — and intraday vol doesn't seem to shift enough within one
                                   # trading day to justify the risk. Set False to re-enable
                                   # periodic refitting on the REFIT_INTERVAL_SEC cadence below.
-REFIT_INTERVAL_SEC = 300        # refit GARCH at most this often (wall-clock time),
+REFIT_INTERVAL_SEC = 300  # 個人智慧財產,參數不提供 (placeholder) |        # refit GARCH at most this often (wall-clock time),
                                  # independent of how often the poll loop runs
-POLL_INTERVAL_SEC = 5
-QUOTE_NOTIONAL_DOLLARS = 10.0   # size each quote as ~$10 worth of contracts at
+POLL_INTERVAL_SEC = 5  # 個人智慧財產,參數不提供 (placeholder)
+QUOTE_NOTIONAL_DOLLARS = 10.0   # size each quote as ~$10 worth of contracts at — 個人智慧財產,參數不提供 (placeholder)
                                   # the quoted price (count = floor(15 / price)),
                                   # not a fixed contract count
-EDGE_CENTER_CENTS = 50          # fair price at which edge is largest (max uncertainty)
-EDGE_AT_CENTER_CENTS = 4        # edge (in cents) applied when fair value == EDGE_CENTER_CENTS
-EDGE_SLOPE = 0.06               # cents of edge REMOVED per cent of distance from center —
+EDGE_CENTER_CENTS = 50          # fair price at which edge is largest (max uncertainty) — 個人智慧財產,參數不提供 (placeholder)
+EDGE_AT_CENTER_CENTS = 4        # edge (in cents) applied when fair value == EDGE_CENTER_CENTS — 個人智慧財產,參數不提供 (placeholder)
+EDGE_SLOPE = 0.06               # cents of edge REMOVED per cent of distance from center — — 個人智慧財產,參數不提供 (placeholder)
                                   # e.g. at fair=99c (49c from center), edge shrinks by
                                   # 0.08*49=3.92c, leaving ~1c edge instead of the full 5c
-EDGE_MIN_CENTS = 2              # floor — edge never goes below this (always leave SOME margin)
-REQUOTE_THRESHOLD_CENTS = 2    # only pull/requote a side if its target moved >= this much
+EDGE_MIN_CENTS = 2              # floor — edge never goes below this (always leave SOME margin) — 個人智慧財產,參數不提供 (placeholder)
+REQUOTE_THRESHOLD_CENTS = 2    # only pull/requote a side if its target moved >= this much — 個人智慧財產,參數不提供 (placeholder)
 
-TOTAL_BUDGET_DOLLARS = 50.0    # HARD CAP, strictly enforced: filled exposure must never
+TOTAL_BUDGET_DOLLARS = 50.0    # HARD CAP, strictly enforced: filled exposure must never — 個人智慧財產,參數不提供 (placeholder)
                                  # reach this, and filled + resting notional combined must
                                  # never exceed this either (so a resting order can't fill
                                  # and push you over the cap)
@@ -880,7 +880,7 @@ DRY_RUN_INTERVAL_SEC = 10        # seconds between snapshots if DRY_RUN_LOOPS > 
 # 101.00, 101.05]. Runs one refit (slow part, done once), then prices each
 # value against the LIVE Kalshi orderbook (read-only) — no orders placed.
 # Leave as [] to skip this mode and run DRY_RUN / live as normal.
-CUSTOM_SPOT_TEST: list[float] = []
+CUSTOM_SPOT_TEST: list[float] = []  # 個人智慧財產,參數不提供 (placeholder)
 CUSTOM_SPOT_TEST_BARS_REMAINING: int | None = None  # None = use real current time
 
 

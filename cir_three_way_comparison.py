@@ -57,9 +57,9 @@ TENOR_MAP = {
     "US2Y": "2 Yr", "US5Y": "5 Yr", "US7Y": "7 Yr", "US10Y": "10 Yr", "US30Y": "30 Yr",
 }
 
-DEFAULT_MATURITY_HOURS = 24
-DEFAULT_STRIKE_RANGE_BPS = 20
-DEFAULT_STRIKE_STEP_BPS = 1
+DEFAULT_MATURITY_HOURS = 24  # 個人智慧財產,參數不提供 (placeholder)
+DEFAULT_STRIKE_RANGE_BPS = 20  # 個人智慧財產,參數不提供 (placeholder)
+DEFAULT_STRIKE_STEP_BPS = 1  # 個人智慧財產,參數不提供 (placeholder)
 
 
 class CIRTreasuryPricer:

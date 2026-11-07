@@ -64,7 +64,7 @@ VERBOSE = True   # per-cycle diagnostic logging (fair value, spot/strike, restin
                   # visibility into whether the bot is alive and evaluating
                   # things correctly. Set to False once you trust it and want
                   # quieter logs.
-POLL_INTERVAL_SEC = 10
+POLL_INTERVAL_SEC = 10  # 個人智慧財產,參數不提供 (placeholder)
 
 # Which of the 5 tenors to actually track and quote. Restricting this
 # skips unwanted tenors at the SOURCE (KalshiTreasuryFairValue passes this
@@ -76,7 +76,7 @@ POLL_INTERVAL_SEC = 10
 # Valid values: "US2Y", "US5Y", "US7Y", "US10Y", "US30Y".
 ENABLED_TENORS: tuple[str, ...] = ("US2Y", "US5Y", "US7Y", "US10Y", "US30Y")
 
-GLOBAL_BUDGET_DOLLARS = 100.0  # TOTAL account risk ceiling. See module
+GLOBAL_BUDGET_DOLLARS = 100.0  # TOTAL account risk ceiling. See module — 個人智慧財產,參數不提供 (placeholder)
                                   # docstring's BUDGET MODEL section -- this
                                   # shrinks only in response to real FILLS
                                   # (account-wide), and the resulting ceiling
@@ -91,7 +91,7 @@ GLOBAL_BUDGET_DOLLARS = 100.0  # TOTAL account risk ceiling. See module
                                   # ~10 contracts regardless of how much
                                   # budget was free -- don't reintroduce one.
 
-MATURITY_BUFFER_MINUTES = 30.0  # Padding added to maturity_hours before it
+MATURITY_BUFFER_MINUTES = 30.0  # Padding added to maturity_hours before it — 個人智慧財產,參數不提供 (placeholder)
                                   # feeds the CIR pricing model (both for
                                   # ELIGIBILITY checks and live quoting) --
                                   # NOT a change to the displayed "maturity=

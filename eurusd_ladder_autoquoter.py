@@ -69,21 +69,21 @@ DAILY_SETTLEMENT_ET = "17:00:00"                  # NO LONGER used to determine 
 PYTH_SYMBOL = "FX.EURUSD"           # search query used for Hermes feed discovery
 PYTH_HISTORY_SYMBOL = "FX.EUR/USD"   # benchmarks history-shim symbol — verify this resolves;
                                        # if it 404s/empty, try "EUR/USD" (with slash) instead
-HISTORY_DAYS = 30
+HISTORY_DAYS = 30  # 個人智慧財產,參數不提供 (placeholder)
 BAR_RESOLUTION_MIN = 1
 GARCH_SCALE = 10000.0
 ASSUME_ZERO_DRIFT = True
 RISK_FREE_RATE = 0.0
 
 DISABLE_PERIODIC_REFIT = True
-REFIT_INTERVAL_SEC = 300
-POLL_INTERVAL_SEC = 5
-QUOTE_NOTIONAL_DOLLARS = 10.0
-EDGE_CENTER_CENTS = 50
-EDGE_AT_CENTER_CENTS = 4
-EDGE_SLOPE = 0.06
-EDGE_MIN_CENTS = 2
-REQUOTE_THRESHOLD_CENTS = 2
+REFIT_INTERVAL_SEC = 300  # 個人智慧財產,參數不提供 (placeholder)
+POLL_INTERVAL_SEC = 5  # 個人智慧財產,參數不提供 (placeholder)
+QUOTE_NOTIONAL_DOLLARS = 10.0  # 個人智慧財產,參數不提供 (placeholder)
+EDGE_CENTER_CENTS = 50  # 個人智慧財產,參數不提供 (placeholder)
+EDGE_AT_CENTER_CENTS = 4  # 個人智慧財產,參數不提供 (placeholder)
+EDGE_SLOPE = 0.06  # 個人智慧財產,參數不提供 (placeholder)
+EDGE_MIN_CENTS = 2  # 個人智慧財產,參數不提供 (placeholder)
+REQUOTE_THRESHOLD_CENTS = 2  # 個人智慧財產,參數不提供 (placeholder)
 
 # --- Interest-rate-strip style near-certainty rule ---
 # Once fair value is this confident (99c+ / 1c-), the contract is
@@ -94,10 +94,10 @@ REQUOTE_THRESHOLD_CENTS = 2
 # still on the table between "certain" and "100c". This mirrors how a
 # rates desk treats deep ITM/OTM strikes on a strip: far-from-the-money
 # legs aren't priced for edge, they're priced to just get done.
-HIGH_CONFIDENCE_THRESHOLD_CENTS = 97
+HIGH_CONFIDENCE_THRESHOLD_CENTS = 97  # 個人智慧財產,參數不提供 (placeholder)
 
 # --- BUDGET: pooled across the WHOLE ladder, not per-strike ---
-TOTAL_BUDGET_DOLLARS = 50.0
+TOTAL_BUDGET_DOLLARS = 50.0  # 個人智慧財產,參數不提供 (placeholder)
 
 
 def clamp_price(c: int) -> int:

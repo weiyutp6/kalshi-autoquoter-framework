@@ -93,7 +93,7 @@ TICKER_PREFIX = "KXUST"
 TENOR_REGEX = re.compile(r"^KXUST(\d+)([A-Z]*)$")
 DEFAULT_TENORS = ("US2Y", "US5Y", "US7Y", "US10Y", "US30Y")
 DEFAULT_SUFFIX = "AD"
-DEFAULT_SERIES_REDISCOVERY_INTERVAL_SEC = 3600  # re-fetch the full ~12000-series
+DEFAULT_SERIES_REDISCOVERY_INTERVAL_SEC = 3600  # re-fetch the full ~12000-series — 個人智慧財產,參數不提供 (placeholder)
                                                   # list at most once per hour --
                                                   # the 5 KXUST*AD tickers this
                                                   # bot cares about don't change

@@ -45,7 +45,7 @@ from live_treasury_yields_pyth import get_live_treasury_yields
 # forget -- but if it's not currently worth the added file-management
 # complexity, this is the simplest thing that works.
 
-DEFAULT_FAIR_VALUE_TARGET_THRESHOLD_CENTS = 90
+DEFAULT_FAIR_VALUE_TARGET_THRESHOLD_CENTS = 90  # 個人智慧財產,參數不提供 (placeholder)
 
 
 class KalshiTreasuryFairValue:

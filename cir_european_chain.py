@@ -63,9 +63,9 @@ TENOR_MAP = {
     "US2Y": "2 Yr", "US5Y": "5 Yr", "US7Y": "7 Yr", "US10Y": "10 Yr", "US30Y": "30 Yr",
 }
 
-MATURITY_HOURS = 24
-STRIKE_RANGE_BPS = 20
-STRIKE_STEP_BPS = 1
+MATURITY_HOURS = 24  # 個人智慧財產,參數不提供 (placeholder)
+STRIKE_RANGE_BPS = 20  # 個人智慧財產,參數不提供 (placeholder)
+STRIKE_STEP_BPS = 1  # 個人智慧財產,參數不提供 (placeholder)
 CALL_CSV_PATH = "cir_european_chain.csv"
 BINARY_CSV_PATH = "cir_binary_vertical_spread_chain.csv"
 

@@ -61,7 +61,7 @@ PINNED_FEED_IDS: dict[str, str | None] = {
 # can occasionally exceed this in one step; the point isn't to reject
 # automatically (that risks blocking legitimate fast-moving days), it's to
 # make anomalies VISIBLE so you notice before trading on bad data.
-MAX_PLAUSIBLE_JUMP_BPS = 20.0
+MAX_PLAUSIBLE_JUMP_BPS = 20.0  # 個人智慧財產,參數不提供 (placeholder)
 _last_good_yield_pct: dict[str, float] = {}
 
 
